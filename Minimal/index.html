@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Novalink — Networks that keep you connected</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar" id="navbar">
+    <a href="#home" class="logo">
+      <svg viewBox="0 0 40 40" class="logo-mark" aria-hidden="true">
+        <circle cx="20" cy="22" r="3.5" fill="currentColor"/>
+        <path d="M13 15a10 10 0 0 1 14 0M8.5 10.5a16.5 16.5 0 0 1 23 0" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+        <path d="M20 26v9" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+      </svg>
+      <span><b>NOVALINK</b><small>Telecom &amp; Networks</small></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="btn btn-accent nav-cta-mobile">Get connected <span class="arr">↗</span></a>
+    </nav>
+
+    <a href="#contact" class="btn btn-accent nav-cta">Get connected <span class="arr">↗</span></a>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span></button>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <p class="eyebrow reveal">Hi, we're Novalink</p>
+        <h1 class="reveal">Networks that<br/>keep you<br/><em>connected.</em></h1>
+        <p class="lead reveal">We build fast, reliable 5G and fiber networks that help homes and businesses stay online, work smarter and grow without limits.</p>
+        <a href="#solutions" class="btn btn-dark reveal">View our plans <span class="arr">↗</span></a>
+      </div>
+
+      <div class="hero-visual reveal">
+        <!-- rotating badge -->
+        <div class="badge-rotate">
+          <svg viewBox="0 0 120 120">
+            <defs><path id="circ" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
+            <text><textPath href="#circ">5G NATIONWIDE • ALWAYS ON • 5G NATIONWIDE • ALWAYS ON •</textPath></text>
+          </svg>
+          <span class="badge-star">✦</span>
+        </div>
+
+        <!-- arch with tower -->
+        <div class="arch" data-depth="8">
+          <svg viewBox="0 0 400 520" preserveAspectRatio="xMidYMax slice" aria-label="Cell tower over a city">
+            <defs>
+              <linearGradient id="skyG" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#d4e8e3"/><stop offset="1" stop-color="#b9d9d1"/>
+              </linearGradient>
+            </defs>
+            <rect width="400" height="520" fill="url(#skyG)"/>
+            <circle cx="290" cy="130" r="46" fill="#fff" opacity=".55"/>
+            <!-- signal waves -->
+            <g fill="none" stroke="#1f6f64" stroke-width="3" stroke-linecap="round">
+              <path class="wave w1" d="M176 92 a34 34 0 0 0 0 48"/>
+              <path class="wave w2" d="M160 76 a56 56 0 0 0 0 80"/>
+              <path class="wave w3" d="M144 60 a78 78 0 0 0 0 112"/>
+              <path class="wave w1" d="M224 92 a34 34 0 0 1 0 48"/>
+              <path class="wave w2" d="M240 76 a56 56 0 0 1 0 80"/>
+              <path class="wave w3" d="M256 60 a78 78 0 0 1 0 112"/>
+            </g>
+            <!-- tower -->
+            <g stroke="#151515" stroke-linecap="round" fill="none">
+              <line x1="200" y1="70" x2="200" y2="116" stroke-width="4"/>
+              <line x1="186" y1="130" x2="150" y2="440" stroke-width="7"/>
+              <line x1="214" y1="130" x2="250" y2="440" stroke-width="7"/>
+              <polyline points="188,150 212,190 184,230 218,272 178,316 224,360 170,404 232,440" stroke-width="3"/>
+              <polyline points="212,150 188,190 216,230 182,272 222,316 176,360 230,404 168,440" stroke-width="3"/>
+              <line x1="182" y1="170" x2="218" y2="170" stroke-width="3"/>
+              <line x1="174" y1="250" x2="226" y2="250" stroke-width="3"/>
+              <line x1="166" y1="330" x2="234" y2="330" stroke-width="3"/>
+            </g>
+            <rect x="170" y="118" width="12" height="40" rx="3" fill="#151515"/>
+            <rect x="218" y="118" width="12" height="40" rx="3" fill="#151515"/>
+            <rect x="194" y="124" width="12" height="32" rx="3" fill="#1f6f64"/>
+            <circle cx="200" cy="66" r="7" fill="#1f6f64" class="beacon"/>
+            <!-- skyline -->
+            <g fill="#2a2a2a">
+              <rect x="0" y="400" width="44" height="120"/>
+              <rect x="40" y="370" width="38" height="150"/>
+              <rect x="76" y="420" width="50" height="100"/>
+              <rect x="270" y="380" width="46" height="140"/>
+              <rect x="312" y="410" width="40" height="110"/>
+              <rect x="350" y="360" width="50" height="160"/>
+            </g>
+            <g fill="#111"><rect x="120" y="440" width="160" height="80"/></g>
+            <g fill="#b9d9d1" opacity=".75">
+              <rect x="50" y="384" width="6" height="8"/><rect x="62" y="384" width="6" height="8"/><rect x="50" y="404" width="6" height="8"/>
+              <rect x="360" y="376" width="6" height="8"/><rect x="374" y="376" width="6" height="8"/><rect x="360" y="396" width="6" height="8"/><rect x="374" y="416" width="6" height="8"/>
+              <rect x="280" y="396" width="6" height="8"/><rect x="292" y="416" width="6" height="8"/>
+            </g>
+          </svg>
+        </div>
+
+        <!-- floating: small white card -->
+        <a href="#services" class="float-card fc-white" data-depth="18">
+          <b>5G HOME</b>
+          <span>Wireless broadband that installs in minutes.</span>
+          <i class="round-arrow">↗</i>
+        </a>
+
+        <!-- floating: tinted image card -->
+        <div class="float-card fc-image" data-depth="24">
+          <button class="heart" aria-label="Save">♡</button>
+          <svg viewBox="0 0 200 220" aria-label="Wi-Fi router">
+            <rect width="200" height="220" fill="#c9e2dc"/>
+            <rect x="0" y="160" width="200" height="60" fill="#b3d4cc"/>
+            <ellipse cx="100" cy="166" rx="70" ry="8" fill="#000" opacity=".12"/>
+            <line x1="62" y1="132" x2="48" y2="60" stroke="#f3f3f1" stroke-width="7" stroke-linecap="round"/>
+            <line x1="138" y1="132" x2="152" y2="60" stroke="#f3f3f1" stroke-width="7" stroke-linecap="round"/>
+            <rect x="40" y="124" width="120" height="40" rx="12" fill="#f3f3f1"/>
+            <rect x="40" y="148" width="120" height="16" rx="8" fill="#e2e2df"/>
+            <circle cx="70" cy="140" r="3" fill="#1f6f64"/><circle cx="84" cy="140" r="3" fill="#1f6f64"/><circle cx="98" cy="140" r="3" fill="#9fc9bf"/>
+            <g fill="none" stroke="#1f6f64" stroke-width="3" stroke-linecap="round" opacity=".7">
+              <path d="M84 98a22 22 0 0 1 32 0"/><path d="M74 86a36 36 0 0 1 52 0"/>
+            </g>
+          </svg>
+        </div>
+
+        <!-- floating: dark product card -->
+        <div class="float-card fc-dark" data-depth="14">
+          <div>
+            <h4>FIBER MAX</h4>
+            <small>Collection</small>
+            <p>Ultra-fast speeds.<br/>Truly unlimited.</p>
+            <a href="#solutions">Shop now <span>→</span></a>
+          </div>
+          <svg viewBox="0 0 110 130" aria-label="Smartphone">
+            <rect width="110" height="130" rx="6" fill="#1f6f64"/>
+            <rect x="30" y="16" width="50" height="98" rx="10" fill="#0e0e0e"/>
+            <rect x="34" y="24" width="42" height="80" rx="6" fill="#2b8a7c"/>
+            <path d="M44 70a14 14 0 0 1 22 0M48 78a7 7 0 0 1 14 0" fill="none" stroke="#e4f2ef" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="55" cy="86" r="2.5" fill="#e4f2ef"/>
+            <text x="40" y="44" fill="#e4f2ef" font-size="10" font-family="Inter" font-weight="600">5G</text>
+          </svg>
+        </div>
+
+        <!-- swoosh -->
+        <svg class="swoosh" viewBox="0 0 260 60" aria-hidden="true">
+          <path d="M5 50 C60 10 120 60 160 30 S230 10 255 22 M60 52 C110 40 170 46 250 30" fill="none" stroke="#1f8a7a" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES + PROCESS ================= -->
+    <section class="split">
+      <div class="services" id="services">
+        <h2 class="label"><span class="star">✳</span> What we do</h2>
+        <ul class="service-list">
+          <li class="reveal"><a href="#contact">
+            <svg viewBox="0 0 24 24"><path d="M4 18v-2M9 18v-5M14 18V9M19 18V5"/></svg>
+            <div><b>5G Mobile</b><span>Unlimited data on our fastest network.</span></div><i>→</i></a></li>
+          <li class="reveal"><a href="#contact">
+            <svg viewBox="0 0 24 24"><path d="M3 8c4 0 4 4 9 4s5-4 9-4M3 14c4 0 4 4 9 4s5-4 9-4"/></svg>
+            <div><b>Fiber Broadband</b><span>Symmetrical speeds up to 10 Gbps.</span></div><i>→</i></a></li>
+          <li class="reveal"><a href="#contact">
+            <svg viewBox="0 0 24 24"><rect x="4" y="3" width="10" height="18"/><path d="M14 9h6v12H14M7 7h4M7 11h4M7 15h4"/></svg>
+            <div><b>Enterprise Networks</b><span>Private networks built for scale.</span></div><i>→</i></a></li>
+          <li class="reveal"><a href="#contact">
+            <svg viewBox="0 0 24 24"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M10 3v4M14 3v4M10 17v4M14 17v4M3 10h4M3 14h4M17 10h4M17 14h4"/></svg>
+            <div><b>IoT &amp; Smart Cities</b><span>Connect millions of devices securely.</span></div><i>→</i></a></li>
+          <li class="reveal"><a href="#contact">
+            <svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+            <div><b>Cloud Voice</b><span>Business calling, anywhere.</span></div><i>→</i></a></li>
+          <li class="reveal muted-row"><a href="#solutions"><div><b class="thin">Explore all services</b></div><i>→</i></a></li>
+        </ul>
+      </div>
+
+      <div class="process" id="process">
+        <div class="process-head">
+          <h2 class="label"><span class="star">✳</span> How we connect you</h2>
+          <p class="right-note">A simple process<br/>from first call to full speed.</p>
+        </div>
+        <ol class="steps" id="steps">
+          <li class="step reveal">
+            <span class="bubble"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="m20 20-4.5-4.5"/></svg></span>
+            <em>01</em><b>Consult</b><p>We learn about your home, business and coverage needs.</p>
+          </li>
+          <li class="step reveal">
+            <span class="bubble"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></span>
+            <em>02</em><b>Plan</b><p>We map the right plan, speeds and hardware for you.</p>
+          </li>
+          <li class="step reveal">
+            <span class="bubble"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg></span>
+            <em>03</em><b>Install</b><p>Certified engineers set everything up the same week.</p>
+          </li>
+          <li class="step reveal">
+            <span class="bubble"><svg viewBox="0 0 24 24"><path d="M12 3v8"/><path d="M6.3 7.3a8 8 0 1 0 11.4 0"/></svg></span>
+            <em>04</em><b>Activate</b><p>Go live instantly with speed tests to prove it.</p>
+          </li>
+          <li class="step reveal">
+            <span class="bubble"><svg viewBox="0 0 24 24"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/></svg></span>
+            <em>05</em><b>Support</b><p>24/7 monitoring and real humans whenever you need us.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= SOLUTIONS ================= -->
+    <section class="solutions" id="solutions">
+      <div class="row-head">
+        <h2 class="label"><span class="star">✳</span> Featured solutions</h2>
+        <a href="#contact" class="link-arrow">View all plans <span>→</span></a>
+      </div>
+      <div class="sol-grid">
+        <article class="sol-card reveal">
+          <div class="sol-text"><h3>HOME<br/>FIBER</h3><span>Residential<br/>&amp; Wi-Fi 7</span></div>
+          <svg viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <rect width="400" height="260" fill="#ecebe7"/>
+            <path d="M260 0 L400 0 L400 260 L300 260 Z" fill="#e2e1dc"/>
+            <g opacity=".18" fill="#555"><ellipse cx="330" cy="70" rx="40" ry="10" transform="rotate(-30 330 70)"/><ellipse cx="350" cy="110" rx="34" ry="8" transform="rotate(-40 350 110)"/></g>
+            <rect x="0" y="210" width="400" height="50" fill="#dedcd6"/>
+            <ellipse cx="270" cy="214" rx="70" ry="6" fill="#000" opacity=".1"/>
+            <line x1="236" y1="190" x2="226" y2="128" stroke="#2a2a2a" stroke-width="6" stroke-linecap="round"/>
+            <line x1="304" y1="190" x2="314" y2="128" stroke="#2a2a2a" stroke-width="6" stroke-linecap="round"/>
+            <rect x="214" y="180" width="112" height="34" rx="10" fill="#2a2a2a"/>
+            <circle cx="236" cy="197" r="3" fill="#5fc2b2"/><circle cx="248" cy="197" r="3" fill="#5fc2b2"/>
+            <rect x="340" y="168" width="22" height="46" rx="8" fill="#c9c6bf"/>
+            <path d="M351 168 C346 140 356 128 351 104 M351 150 C362 140 370 130 368 118 M351 140 C340 132 334 122 336 112" stroke="#6b6b62" stroke-width="2" fill="none"/>
+          </svg>
+          <a href="#contact" class="corner-btn" aria-label="Open Home Fiber">↗</a>
+        </article>
+
+        <article class="sol-card reveal">
+          <div class="sol-text"><h3>BUSINESS<br/>DASHBOARD</h3><span>Network analytics</span></div>
+          <svg viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <rect width="400" height="260" fill="#efeeea"/>
+            <rect x="120" y="90" width="300" height="200" rx="10" fill="#fff" stroke="#e3e1db"/>
+            <rect x="120" y="90" width="64" height="200" fill="#f7f6f3"/>
+            <g fill="#cfccc4"><rect x="132" y="112" width="40" height="5" rx="2"/><rect x="132" y="128" width="32" height="5" rx="2"/><rect x="132" y="144" width="36" height="5" rx="2"/><rect x="132" y="160" width="28" height="5" rx="2"/><rect x="132" y="176" width="34" height="5" rx="2"/></g>
+            <rect x="130" y="124" width="46" height="13" rx="3" fill="#1f8a7a" opacity=".15"/>
+            <text x="200" y="114" font-family="Inter" font-size="8" fill="#888">Data throughput</text>
+            <text x="200" y="134" font-family="Inter" font-size="16" font-weight="600" fill="#151515">8.42 Tb</text>
+            <text x="300" y="134" font-family="Inter" font-size="8" fill="#1f8a7a">+18.2%</text>
+            <path class="draw" d="M200 210 C220 200 230 170 250 180 S280 214 300 190 S330 150 350 166 S380 150 400 140" fill="none" stroke="#1f8a7a" stroke-width="2.5"/>
+            <g fill="#e3e1db"><rect x="200" y="226" width="40" height="4" rx="2"/><rect x="250" y="226" width="40" height="4" rx="2"/><rect x="300" y="226" width="40" height="4" rx="2"/></g>
+          </svg>
+          <a href="#contact" class="corner-btn" aria-label="Open Business Dashboard">↗</a>
+        </article>
+
+        <article class="sol-card reveal">
+          <div class="sol-text"><h3>IOT<br/>CONNECT</h3><span>Smart devices &amp; sensors</span></div>
+          <svg viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <defs>
+              <linearGradient id="ribbonG" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#7fd1c3"/><stop offset=".5" stop-color="#1f8a7a"/><stop offset="1" stop-color="#0b4a42"/>
+              </linearGradient>
+            </defs>
+            <rect width="400" height="260" fill="#f1f0ec"/>
+            <g fill="none" stroke-linecap="round" class="ribbon">
+              <path d="M180 280 C200 160 330 220 320 120 S220 40 260 0" stroke="url(#ribbonG)" stroke-width="46"/>
+              <path d="M180 280 C200 160 330 220 320 120 S220 40 260 0" stroke="#fff" stroke-opacity=".25" stroke-width="10"/>
+              <path d="M420 230 C330 230 300 150 360 110 S420 40 380 -10" stroke="url(#ribbonG)" stroke-width="34" opacity=".85"/>
+              <path d="M420 230 C330 230 300 150 360 110 S420 40 380 -10" stroke="#fff" stroke-opacity=".2" stroke-width="8"/>
+            </g>
+          </svg>
+          <a href="#contact" class="corner-btn" aria-label="Open IoT Connect">↗</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= STATS ================= -->
+    <section class="stats-wrap">
+      <div class="stats reveal">
+        <div class="stat">
+          <svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.5 3.4-5.5 6.5-5.5s5.7 2 6.5 5.5M16 4.8a3.5 3.5 0 0 1 0 6.4M18 14.8c1.8.8 3 2.6 3.5 5.2"/></svg>
+          <strong class="counter" data-target="2" data-suffix="M+">0</strong>
+          <b>Active customers</b><p>Homes and businesses<br/>across the country.</p>
+        </div>
+        <div class="stat">
+          <svg viewBox="0 0 24 24"><path d="M12 10v12M8 22l4-12 4 12M9 18h6"/><path d="M8.5 5.5a5 5 0 0 1 7 0M6 3a8.5 8.5 0 0 1 12 0"/></svg>
+          <strong class="counter" data-target="40" data-suffix="k+">0</strong>
+          <b>Towers nationwide</b><p>Coverage in 120+ cities<br/>and growing.</p>
+        </div>
+        <div class="stat">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
+          <strong class="counter" data-target="99.9" data-decimals="1" data-suffix="%">0</strong>
+          <b>Network uptime</b><p>Monitored around<br/>the clock.</p>
+        </div>
+        <div class="stat">
+          <svg viewBox="0 0 24 24"><path d="M7 4h10v5a5 5 0 0 1-10 0zM7 6H4a3 3 0 0 0 3 4M17 6h3a3 3 0 0 1-3 4M12 14v4M8 21h8M9 18h6"/></svg>
+          <strong class="counter" data-target="18">0</strong>
+          <b>Industry awards</b><p>For speed, reliability<br/>and service.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="about" id="about">
+      <div class="about-intro reveal">
+        <h2 class="label"><span class="star">✳</span> About us</h2>
+        <h3 class="about-title">Built by two engineers who believed everyone deserves a <em>better</em> connection.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla, vestibulum id ligula porta felis euismod semper.</p>
+        <div class="about-facts">
+          <div><b>2014</b><span>Founded</span></div>
+          <div><b>850+</b><span>Engineers</span></div>
+          <div><b>120+</b><span>Cities served</span></div>
+        </div>
+      </div>
+
+      <div class="founders">
+        <article class="founder reveal">
+          <div class="founder-arch">
+            <svg viewBox="0 0 240 300" preserveAspectRatio="xMidYMax slice" aria-label="Portrait of Arjun Mehta">
+              <rect width="240" height="300" fill="#cfe5df"/>
+              <path d="M30 300c8-70 46-104 90-104s82 34 90 104z" fill="#151515"/>
+              <path d="M104 196l16 52 16-52z" fill="#f2f2f0"/>
+              <rect x="106" y="158" width="28" height="42" rx="10" fill="#9c9c9c"/>
+              <ellipse cx="120" cy="124" rx="38" ry="44" fill="#b8b8b8"/>
+              <path d="M82 118c0-34 18-50 38-50s38 16 38 46c-8-14-22-22-38-22s-30 10-38 26z" fill="#1d1d1d"/>
+              <g fill="none" stroke="#1d1d1d" stroke-width="3"><rect x="94" y="116" width="19" height="14" rx="5"/><rect x="127" y="116" width="19" height="14" rx="5"/><line x1="113" y1="122" x2="127" y2="122"/></g>
+              <path d="M108 148c7 5 17 5 24 0" fill="none" stroke="#6e6e6e" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="founder-info">
+            <div>
+              <span class="role">Co-founder &amp; CEO</span>
+              <h4>Arjun Mehta</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.</p>
+            </div>
+            <div class="socials">
+              <a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="X">𝕏</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="founder reveal">
+          <div class="founder-arch">
+            <svg viewBox="0 0 240 300" preserveAspectRatio="xMidYMax slice" aria-label="Portrait of Kavya Raman">
+              <rect width="240" height="300" fill="#e6e4df"/>
+              <path d="M76 110c0-40 20-58 44-58s44 18 44 58v96H76z" fill="#1d1d1d"/>
+              <path d="M30 300c8-70 46-104 90-104s82 34 90 104z" fill="#1f6f64"/>
+              <path d="M98 196l22 40 22-40z" fill="#f2f2f0"/>
+              <rect x="107" y="158" width="26" height="42" rx="10" fill="#a6a6a6"/>
+              <ellipse cx="120" cy="126" rx="36" ry="42" fill="#c2c2c2"/>
+              <path d="M84 124c2-32 18-48 38-48s34 14 36 42c-14-2-34-12-44-26-4 14-16 26-30 32z" fill="#1d1d1d"/>
+              <circle cx="106" cy="128" r="3" fill="#2a2a2a"/><circle cx="134" cy="128" r="3" fill="#2a2a2a"/>
+              <path d="M110 148c6 5 14 5 20 0" fill="none" stroke="#6e6e6e" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="founder-info">
+            <div>
+              <span class="role">Co-founder &amp; CTO</span>
+              <h4>Kavya Raman</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut enim ad minim.</p>
+            </div>
+            <div class="socials">
+              <a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="X">𝕏</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= TESTIMONIAL + CTA ================= -->
+    <section class="cta-row">
+      <div class="quote reveal">
+        <span class="qmark">“</span>
+        <p>Novalink completely transformed how our offices stay connected. The network is not only fast but also rock-solid and effortless to manage.</p>
+        <div class="person">
+          <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" fill="#d9d8d3"/><circle cx="20" cy="16" r="7" fill="#9a9a9a"/><path d="M7 36c2-7 7-10 13-10s11 3 13 10" fill="#2a2a2a"/></svg>
+          <div><b>Jessica Miller</b><span>Head of IT, Soulé Retail</span></div>
+        </div>
+      </div>
+
+      <div class="cta-image reveal">
+        <svg viewBox="0 0 300 180" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <rect width="300" height="180" fill="#e7e6e1"/>
+          <rect x="0" y="130" width="300" height="50" fill="#d8d6cf"/>
+          <rect x="150" y="96" width="90" height="56" rx="4" fill="#222"/>
+          <rect x="155" y="101" width="80" height="44" fill="#1f6f64"/>
+          <path d="M180 128a14 14 0 0 1 30 0M186 134a7 7 0 0 1 18 0" fill="none" stroke="#dff0ec" stroke-width="2.5" stroke-linecap="round"/>
+          <rect x="140" y="150" width="110" height="6" rx="3" fill="#333"/>
+          <rect x="70" y="104" width="24" height="48" rx="9" fill="#c4c1b9"/>
+          <path d="M82 104 C78 76 90 62 84 36 M82 84 C94 76 102 64 100 52 M82 74 C70 66 64 56 66 46" stroke="#5a5a52" stroke-width="2" fill="none"/>
+        </svg>
+      </div>
+
+      <div class="cta-text reveal">
+        <h3>Ready to upgrade<br/>your <em>connection?</em></h3>
+        <p>Let's find the perfect plan together.</p>
+        <a href="#contact" class="btn btn-accent">Get in touch <span class="arr">↗</span></a>
+      </div>
+
+      <div class="badge-rotate small">
+        <svg viewBox="0 0 120 120">
+          <defs><path id="circ2" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
+          <text><textPath href="#circ2">LET'S CONNECT • STAY ONLINE • LET'S CONNECT • STAY ONLINE •</textPath></text>
+        </svg>
+        <span class="badge-star">✦</span>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="contact" id="contact">
+      <div class="contact-left reveal">
+        <h2 class="label"><span class="star">✳</span> Contact us</h2>
+        <h3 class="contact-title">Tell us what you need.<br/>We'll get you <em>online.</em></h3>
+        <ul class="contact-list">
+          <li><span>Sales</span><a href="tel:18001234567">1800 123 4567</a></li>
+          <li><span>Support</span><a href="mailto:support@novalink.example">support@novalink.example</a></li>
+          <li><span>Office</span>Lorem Tower, Ipsum Road, Coimbatore</li>
+          <li><span>Hours</span>Mon – Sat, 9 AM – 8 PM</li>
+        </ul>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="chips" id="chips">
+          <button type="button" class="active">Home</button>
+          <button type="button">Business</button>
+          <button type="button">Enterprise</button>
+          <button type="button">Support</button>
+        </div>
+        <div class="row">
+          <div class="field"><input id="name" placeholder=" " /><label for="name">Full name</label></div>
+          <div class="field"><input id="phone" placeholder=" " /><label for="phone">Phone</label></div>
+        </div>
+        <div class="field"><input id="email" type="email" placeholder=" " /><label for="email">Email address</label></div>
+        <div class="field"><textarea id="message" rows="3" placeholder=" "></textarea><label for="message">How can we help?</label></div>
+        <button class="btn btn-dark" type="submit">Send message <span class="arr">↗</span></button>
+        <p class="form-msg" id="formMsg" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <a href="#home" class="logo">
+      <svg viewBox="0 0 40 40" class="logo-mark" aria-hidden="true">
+        <circle cx="20" cy="22" r="3.5" fill="currentColor"/>
+        <path d="M13 15a10 10 0 0 1 14 0M8.5 10.5a16.5 16.5 0 0 1 23 0" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+        <path d="M20 26v9" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+      </svg>
+      <span><b>NOVALINK</b><small>Telecom &amp; Networks</small></span>
+    </a>
+    <div class="f-item"><b>Email</b><span>hello@novalink.example</span></div>
+    <div class="f-item"><b>Phone</b><span>+91 1800 123 4567</span></div>
+    <div class="f-item"><b>Location</b><span>Coimbatore, India</span></div>
+    <div class="f-follow">
+      <b>Follow us</b>
+      <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
+      <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M6 10v8M6 6v.5M10 18v-8M10 13c0-2 1.5-3 3-3s3 1 3 3v5"/></svg></a>
+      <a href="#" aria-label="X"><svg viewBox="0 0 24 24"><path d="M4 4l16 16M20 4L4 20"/></svg></a>
+    </div>
+    <p class="copy">© <span id="year"></span> Novalink Telecom. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pulsecare — Healthcare</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <circle cx="8" cy="8" r="4"/><circle cx="16" cy="8" r="4"/><path d="M4 16c0-2 2-4 4-4h8c2 0 4 2 4 4v4H4z"/>
+        </svg>
+        <span>PULSECARE</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="btn btn-light nav-cta">Get in Touch</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-intro reveal">
+        <h1>Health and Comprehensive Care</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a href="#services" class="btn btn-dark">Explore Services</a>
+      </div>
+
+      <!-- floating icons around hero -->
+      <div class="float-icon fi-1">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
+      </div>
+      <div class="float-icon fi-2 avatar">
+        <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" fill="#f3d9c6"/><circle cx="20" cy="16" r="7" fill="#c98f6b"/><path d="M8 34c2-7 7-10 12-10s10 3 12 10" fill="#3b5bdb"/></svg>
+      </div>
+
+      <!-- Glass hero card -->
+      <div class="hero-card reveal">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+
+        <div class="card-nav">
+          <span class="card-logo">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="8" r="4"/><circle cx="16" cy="8" r="4"/></svg>
+            Pulsecare
+          </span>
+          <div class="card-links">
+            <span>Home</span><span><b>Doctors</b></span><span><b>Clinics</b></span><span><b>Pharmacy</b></span>
+          </div>
+          <a href="#contact" class="btn btn-blue btn-sm">Book Now</a>
+        </div>
+
+        <h2 class="hero-title">Healthcare</h2>
+
+        <div class="mini-card mini-light">
+          <small>Lorem</small>
+          <strong>24/7 Care</strong>
+          <div class="dots"><i class="dot dark"></i><i class="dot"></i></div>
+        </div>
+        <div class="mini-card mini-dark">
+          <small>Dolor sit</small>
+          <strong>98% Recovery</strong>
+        </div>
+        <div class="mini-card mini-text">
+          <strong>Lorem ipsum</strong>
+          <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+        </div>
+
+        <form class="search-bar" id="searchForm">
+          <span class="search-label">Search</span>
+          <span class="line"></span>
+          <svg class="search-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg>
+          <input type="text" placeholder="Find a doctor..." id="searchInput" />
+          <button type="submit" class="search-btn" aria-label="Search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"><circle cx="11" cy="11" r="6"/><path d="m20 20-4-4"/></svg>
+          </button>
+        </form>
+
+        <div class="float-icon fi-3">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="9" width="16" height="6" rx="3" transform="rotate(-45 12 12)"/><path d="m9.5 9.5 5 5"/></svg>
+        </div>
+      </div>
+
+      <div class="float-icon fi-4">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3v6a5 5 0 0 0 10 0V3"/><circle cx="17" cy="17" r="3"/><path d="M12 14v2a5 5 0 0 0 5 5"/></svg>
+      </div>
+      <div class="float-icon fi-5">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M5 21c1-4 4-6 7-6s6 2 7 6"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="about" id="about">
+    <div class="container about-grid">
+      <div class="about-media reveal">
+        <svg viewBox="0 0 480 380" class="about-svg" aria-label="Illustration of a doctor">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#dfe5fb"/><stop offset="1" stop-color="#b9c6f3"/>
+            </linearGradient>
+          </defs>
+          <rect width="480" height="380" rx="28" fill="url(#g1)"/>
+          <circle cx="380" cy="80" r="70" fill="#3b5bdb" opacity=".18"/>
+          <circle cx="90" cy="320" r="90" fill="#3b5bdb" opacity=".12"/>
+          <!-- doctor -->
+          <path d="M150 380c8-80 50-120 90-120s82 40 90 120z" fill="#fff"/>
+          <path d="M222 262l18 40 18-40" fill="#3b5bdb"/>
+          <rect x="226" y="222" width="28" height="40" rx="10" fill="#e8b996"/>
+          <circle cx="240" cy="180" r="48" fill="#f1c9a8"/>
+          <path d="M192 176c0-34 22-52 48-52s48 18 48 52c-10-16-28-24-48-24s-38 8-48 24z" fill="#2b2f45"/>
+          <path d="M200 300c-10 30 0 50 20 52" fill="none" stroke="#2b2f45" stroke-width="5" stroke-linecap="round"/>
+          <circle cx="222" cy="354" r="9" fill="none" stroke="#2b2f45" stroke-width="5"/>
+          <!-- cards -->
+          <g transform="translate(320 200)">
+            <rect width="130" height="70" rx="14" fill="#fff"/>
+            <path d="M14 42h18l8-16 10 28 8-12h18" fill="none" stroke="#3b5bdb" stroke-width="3" stroke-linecap="round"/>
+            <text x="90" y="44" font-family="Inter" font-size="14" font-weight="700" fill="#1c1f2e">72</text>
+          </g>
+          <g transform="translate(30 60)">
+            <rect width="120" height="56" rx="14" fill="#1c1f2e"/>
+            <text x="16" y="25" font-family="Inter" font-size="10" fill="#aab4d6">Patients</text>
+            <text x="16" y="44" font-family="Inter" font-size="16" font-weight="700" fill="#fff">12k+</text>
+          </g>
+        </svg>
+      </div>
+
+      <div class="about-content reveal">
+        <span class="eyebrow">About Us</span>
+        <h2 class="section-title left">Lorem ipsum dolor sit amet consectetur</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla.</p>
+        <p>Vestibulum id ligula porta felis euismod semper. Cras mattis consectetur purus sit amet fermentum. Maecenas faucibus mollis interdum.</p>
+
+        <div class="stats">
+          <div class="stat"><strong class="counter" data-target="25">0</strong><span>Years Experience</span></div>
+          <div class="stat"><strong class="counter" data-target="120">0</strong><span>Specialists</span></div>
+          <div class="stat"><strong class="counter" data-target="12000">0</strong><span>Happy Patients</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES ================= -->
+  <section class="services" id="services">
+    <div class="container">
+      <h2 class="section-title reveal">Our Services</h2>
+      <p class="section-sub reveal">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
+      <div class="services-grid" id="servicesGrid"><!-- injected by JS --></div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-title reveal">Contact Us</h2>
+      <p class="section-sub reveal">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+      <div class="contact-wrap reveal">
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="row">
+            <div class="field">
+              <label for="name">Full Name</label>
+              <input id="name" type="text" placeholder="John Doe" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" type="email" placeholder="john@example.com" required />
+            </div>
+          </div>
+          <div class="field">
+            <label for="subject">Service</label>
+            <select id="subject">
+              <option>General Consultation</option>
+              <option>Cardiology</option>
+              <option>Dental Care</option>
+              <option>Pediatrics</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" placeholder="Lorem ipsum dolor sit amet..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-blue">Send Message</button>
+          <p class="form-msg" id="formMsg"></p>
+        </form>
+
+        <div class="contact-info">
+          <div class="info-item">
+            <span class="info-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6-7-12a7 7 0 0 1 14 0c0 6-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
+            <div><strong>Address</strong><p>123 Lorem Street, Ipsum City, 641001</p></div>
+          </div>
+          <div class="info-item">
+            <span class="info-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span>
+            <div><strong>Phone</strong><p>+91 4983 486 620</p></div>
+          </div>
+          <div class="info-item">
+            <span class="info-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+            <div><strong>Email</strong><p>hello@pulsecare.example</p></div>
+          </div>
+          <div class="info-item">
+            <span class="info-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <div><strong>Hours</strong><p>Mon – Sat: 8:00 AM – 9:00 PM</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="f-col">
+        <h4>Contact</h4>
+        <p class="f-brand">Pulsecare</p>
+        <p class="muted">Lorem ipsum dolor sit amet,<br/>consectetur adipiscing.</p>
+      </div>
+      <div class="f-col">
+        <h4>Service</h4>
+        <ul>
+          <li><a href="#services">Health Checkup</a></li>
+          <li><a href="#services">Pediatrics</a></li>
+          <li><a href="#services">Cardiology</a></li>
+          <li><a href="#services">Dental Care</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#about">Careers</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#home">Privacy</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H8v4h2v8h4v-8h3l1-4h-4V8z"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 6c-.7.3-1.5.6-2.3.7.8-.5 1.5-1.3 1.8-2.3-.8.5-1.7.8-2.6 1A4 4 0 0 0 12 9a11 11 0 0 1-8-4s-4 9 5 13c-2 1.4-4 2-6 2 9 5 20 0 20-11.5V8c.8-.6 1.5-1.3 2-2z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 9h4v12H4zM6 3a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM10 9h4v2c.6-1 2-2 4-2 3 0 4 2 4 5v7h-4v-6c0-1.5-.5-2.5-2-2.5S14 13.5 14 15v6h-4z"/></svg></a>
+        </div>
+        <p class="muted">Call Services</p>
+        <p class="f-phone">4983 486 620</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> Pulsecare. All rights reserved.</p>
+      <div class="fb-links"><a href="#">Facebook</a><a href="#">Instagram</a><a href="#">Twitter</a></div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m6 15 6-6 6 6"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
