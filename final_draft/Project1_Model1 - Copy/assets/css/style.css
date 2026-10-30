@@ -241,6 +241,8 @@ path.flow { stroke-dasharray: 14 10; animation: dash 1.2s linear infinite; }
 .fc-photo { position: relative; min-height: 300px; overflow: hidden; }
 .fc-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; transition: transform .6s cubic-bezier(.2,.8,.2,1); }
 .founder-card:hover .fc-photo img { transform: scale(1.05); }
+/* subject sits right of centre in the source photo; scale + shift to centre the face */
+.fc-photo img.fc-center { transform-origin: 50% 0; scale: 1.3; translate: -11.7% 0; }
 .fc-photo svg { position: absolute; inset: 0; width: 100%; height: 100%; transition: transform .6s; }
 .founder-card:hover .fc-photo svg { transform: scale(1.06); }
 .fc-dark { background: linear-gradient(160deg, #134E48, #1F7A71); }
