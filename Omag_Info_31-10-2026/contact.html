@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Omaginfo LLC</title>
+  <link rel="icon" type="image/png" href="assets/images/Omag_Logo.png" />
+  <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/images/Omag_Logo.png" />
+  <meta name="description"
+    content="Contact Omaginfo LLC to discuss international voice termination, VoIP routes, SMS messaging connectivity, and carrier partnerships." />
+  <meta property="og:title" content="Contact Us | Omaginfo LLC" />
+  <meta property="og:description"
+    content="Discuss your routing requirements and explore opportunities for collaboration with Omaginfo LLC." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/Omag_Logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <div id="scrollBar" aria-hidden="true"></div>
+  <div class="page">
+    <header class="navbar" id="navbar">
+      <a href="index.html" class="logo" aria-label="Omaginfo LLC home">
+        <img src="assets/images/Omag_Logo.png" alt="Omaginfo LLC" class="logo-img" />
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <div class="nav-dd">
+          <div class="dd-row"><a href="services.html">Services</a><button class="dd-toggle" type="button"
+              aria-expanded="false" aria-label="Show services menu">▾</button></div>
+          <div class="dd-menu">
+            <a href="services.html#VoIP"><span class="ico-c "><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg></span>VoIP &amp; International Voice Termination</a>
+            <a href="services.html#sms"><span class="ico-c "><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                  <path d="M8 9h8M8 13h5" />
+                </svg></span>SMS Connectivity</a>
+            <a href="services.html" class="all">All services →</a>
+          </div>
+        </div>
+        <a href="contact.html" class="active">Contact Us</a>
+        <div class="nav-actions-mobile">
+          <a href="contact.html?type=partnership" class="btn btn-dark">Partner with Us</a>
+        </div>
+      </nav>
+      <div class="nav-actions">
+        <a href="contact.html?type=partnership" class="btn btn-dark">Explore Opportunities</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <div class="page-sec" id="contact" data-nav="contact">
+      <section class="page-head reveal">
+        <span class="eyebrow">Contact Us</span>
+        <h1 class="h1">Get in Touch with Omaginfo LLC</h1>
+        <p class="tagline">Discuss your routing requirements and explore opportunities for collaboration.</p>
+      </section>
+
+      <section class="contact contact--tight">
+        <div class="contact-grid">
+          <form class="card light contact-form reveal" id="contactForm" novalidate data-endpoint="https://api.web3forms.com/submit">
+            <input type="hidden" name="access_key" value="195e00aa-bdf6-48c3-9d17-6aa4e7d594dc">
+            <div class="seg" id="seg" role="group" aria-label="Enquiry type">
+              <button type="button" data-type="voice">Voice / VoIP</button>
+              <button type="button" data-type="sms">SMS</button>
+              <button type="button" data-type="partnership">Partnership</button>
+              <button type="button" data-type="general">General</button>
+            </div>
+            <div class="row-3">
+              <div class="field"><label for="name">Full name <span class="req">*</span></label><input id="name"
+                  name="fullname" autocomplete="name" placeholder="Your name" /><span class="hint">Please enter your
+                  name.</span></div>
+              <div class="field"><label for="company">Company <span class="req">*</span></label><input id="company"
+                  name="company" autocomplete="organization" placeholder="Company name" /><span class="hint">Please
+                  enter your company.</span></div>
+            </div>
+            <div class="row-3">
+              <div class="field"><label for="email">Business email <span class="req">*</span></label><input id="email"
+                  name="email" type="email" autocomplete="email" placeholder="name@company.com" /><span
+                  class="hint">Please enter a valid email.</span></div>
+              <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel"
+                  autocomplete="tel" placeholder="+ country code" /><span class="hint">Digits, spaces, + and -
+                  only.</span></div>
+            </div>
+            <div class="field"><label for="message">Message <span class="req">*</span></label><textarea id="message"
+                name="message" rows="5"
+                placeholder="Tell us about your destinations and traffic requirements"></textarea><span
+                class="hint">Please add a short message.</span></div>
+            <div class="hp" aria-hidden="true"><label>Leave this empty <input type="text" name="website" tabindex="-1"
+                  autocomplete="off" /></label></div>
+            <label class="consent"><input type="checkbox" id="consent" /> <span>I agree to the <a href="#">Privacy
+                  Policy</a>.</span></label>
+            <button class="btn btn-purple" type="submit">Send Enquiry</button>
+            <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+          </form>
+
+          <aside class="contact-sidebar contact-info reveal">
+            <!-- Dark Info Card -->
+            <div class="contact-card-dark">
+              <div class="contact-glow" aria-hidden="true"></div>
+
+              <div class="contact-card-inner">
+                <div class="contact-card-header">
+                  <h3>Company Contact</h3>
+                </div>
+
+                <!-- Confirmed Details List -->
+                <div class="contact-details-list">
+                  <!-- Email -->
+                  <div class="contact-item">
+                    <div class="contact-icon-box">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <rect width="20" height="16" x="2" y="4" rx="2" />
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                      </svg>
+                    </div>
+                    <div class="contact-item-info">
+                      <div class="contact-item-label">Official Email</div>
+                      <a href="mailto:info@omaginfo.com" class="contact-item-link">info@omaginfo.com</a>
+                    </div>
+                  </div>
+
+                  <!-- Phone -->
+                  <div class="contact-item">
+                    <div class="contact-icon-box">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path
+                          d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" />
+                      </svg>
+                    </div>
+                    <div class="contact-item-info">
+                      <div class="contact-item-label">Telephone</div>
+                      <a href="tel:+17254658316" class="contact-item-link font-mono">+1 (725) 465-8316</a>
+                    </div>
+                  </div>
+
+                  <!-- Address -->
+                  <div class="contact-item">
+                    <div class="contact-icon-box gold">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z" />
+                        <circle cx="12" cy="10" r="3" />
+                      </svg>
+                    </div>
+                    <div class="contact-item-info">
+                      <div class="contact-item-label">Registered Office</div>
+                      <div class="contact-item-text">1309 Coffeen Avenue, STE 1200,<br />Sheridan, Wyoming, USA 82801
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- LinkedIn -->
+                  <div class="contact-item">
+                    <div class="contact-icon-box">
+                      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path
+                          d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                      </svg>
+                    </div>
+                    <div class="contact-item-info">
+                      <div class="contact-item-label">Company Page</div>
+                      <a href="https://www.linkedin.com/company/omaginfo-llc" target="_blank" rel="noopener noreferrer"
+                        class="contact-linkedin-link">
+                        <span>linkedin.com/company/omaginfo-llc</span>
+                        <svg class="contact-ext-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                          stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path d="M7 17L17 7" />
+                          <path d="M7 7h10v10" />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Partnership Coordination Notice -->
+                <div class="contact-notice">
+                  <p>
+                    <strong>Business Response Time:</strong> Our partner coordination desk reviews routing inquiries and
+                    responds within standard business days.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div>
+          <a href="index.html" class="logo light-logo" aria-label="Omaginfo LLC home">
+            <img src="assets/images/Omag_Logo.png" alt="Omaginfo LLC" class="logo-img" />
+          </a>
+          <p>Global Connectivity. Trusted Partnerships.</p>
+        </div>
+        <div>
+          <h5>Company</h5><a href="about.html">About Us</a><a href="about.html#leadership">Leadership</a><a href="contact.html">Contact
+            Us</a>
+        </div>
+        <div>
+          <h5>Services</h5><a href="services.html#VoIP">VoIP &amp; Voice Termination</a><a href="services.html#sms">SMS Connectivity</a><a
+            href="index.html#services">Direct Route Solutions</a><a href="services.html">All Services</a>
+        </div>
+        <div class="f-contact">
+          <h5>Contact</h5>
+          <a href="mailto:info@omaginfo.com">info@omaginfo.com</a>
+          <a href="tel:+17254658316">+1 (725) 465-8316</a>
+          <span>1309 Coffeen Avenue, STE 1200,<br />Sheridan, Wyoming, USA 82801</span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> Omaginfo LLC. All rights reserved.</p>
+        <div class="fb-links"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a><a class="fb-social"
+            href="https://www.linkedin.com/company/omaginfo-llc" target="_blank" rel="noopener"
+            aria-label="Omaginfo LLC on LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M4 9h4v12H4zM6 3a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM10 9h4v2c.6-1 2-2 4-2 3 0 4 2 4 5v7h-4v-6c0-1.5-.5-2.5-2-2.5S14 13.5 14 15v6h-4z" />
+            </svg></a></div>
+      </div>
+    </footer>
+  </div>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
+
